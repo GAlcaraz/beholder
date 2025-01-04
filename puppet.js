@@ -181,4 +181,71 @@ async function processUrls(urls) {
   }
 }
 
-export { loadStorage, addToStorage, processUrl, processUrls, getCleanContent };
+async function extractSocialLinks(url, browser) {
+  const page = await browser.newPage();
+  try {
+    await page.goto(url, { waitUntil: "networkidle0" });
+
+    const socialLinks = await page.evaluate(() => {
+      const socialPatterns = /twitter|facebook|linkedin|instagram|youtube/i;
+      const links = document.querySelectorAll("a[href]");
+
+      return Array.from(links)
+        .filter((link) => socialPatterns.test(link.href))
+        .map((link) => link.href)
+        .filter((href) => href) // Remove any undefined/empty
+        .filter((href, index, self) => self.indexOf(href) === index); // Remove duplicates
+    });
+
+    return socialLinks;
+  } finally {
+    await page.close();
+  }
+}
+
+async function addSocialsToNewsletters() {
+  console.log("Processing socials");
+  const browser = await puppeteer.launch({
+    executablePath: "/usr/bin/chromium-browser",
+    headless: "new",
+  });
+
+  const storage = await loadStorage();
+  const newslettersData = storage.newsletters;
+  for (const [name, data] of Object.entries(newslettersData)) {
+    if (data.status === "added_socials") {
+      console.log(`Skipping ${name} - already processed`);
+      continue;
+    }
+
+    try {
+      const socialData = extractSocialLinks(data.URL, browser);
+
+      await addToStorage({
+        urls: {
+          ...storage.urls,
+          [url]: {
+            ...urlData,
+            status: "added_socials",
+            socialData, // Add the array of social links
+          },
+        },
+        newsletters: {
+          ...storage.newsletters,
+          ...newsletters,
+        },
+      });
+    } catch (error) {
+      console.error(`Error processing socials for ${name}:`, error);
+    }
+  }
+}
+
+export {
+  addSocialsToNewsletters,
+  loadStorage,
+  addToStorage,
+  processUrl,
+  processUrls,
+  getCleanContent,
+};

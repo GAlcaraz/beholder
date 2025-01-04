@@ -59,6 +59,7 @@ The provided content is:
 ${content}
 
 The already existing list of tags you can use to categorize is tech, business, finance, startup, freemium, paid, free, daily, weekly, politics, culture, science, news, career, ai
+If you dont have a certain piece of information (like twitter handle), don't write that field
 
 Format your response in markdown like this:
 ---
@@ -68,6 +69,7 @@ description: Brief description
 newsletterUrl: "https://example.com/newsletter"
 social:
   twitter: "twitterhandle"
+  (other socials if relevant)
 language: "English"
 pricing: "Free/Premium/etc"
 schedule: "Daily/Weekly/Monthly"
@@ -83,6 +85,7 @@ links:
 ---
 # Newsletter Name
 [Introduction paragraph]
+![newsletter title](images/[newsletter title in kebabcase.webp]) // this line is an image path for an image I generated before
 ## Newsletter Features
 [Features content]
 ## Writing Style
@@ -109,7 +112,7 @@ async function processNewslettersWithAI() {
   const outputDir = path.join(process.cwd(), "newsletters");
 
   for (const [name, data] of Object.entries(newslettersData)) {
-    if (data.status === "completed") {
+    if (data.status === "completed" || data.status === "screenshot_generated") {
       console.log(`Skipping ${name} - already processed`);
       continue;
     }

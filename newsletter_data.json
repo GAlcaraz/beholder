@@ -7,7 +7,7 @@
       "status": "INGESTED"
     }
   },
-  "lastUpdated": "2025-01-04T19:21:03.585Z",
+  "lastUpdated": "2025-01-04T20:00:06.579Z",
   "newsletters": {
     "TechCrunch": {
       "URL": "https://techcrunch.com/",
@@ -15,9 +15,10 @@
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily & Weekly",
       "Description": "With more than 17 million monthly readers, TechCrunch not only runs one of the top blogs in the industry but also produces nearly a dozen different industry-focused newsletters.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/techcrunch.md",
-      "updatedAt": "2025-01-04T19:20:06.750Z"
+      "updatedAt": "2025-01-04T19:56:47.572Z",
+      "screenshotPath": "images/newsletters/techcrunch.png"
     },
     "Bizarro Devs": {
       "URL": "http://bizzarodevs.com/",
@@ -25,9 +26,10 @@
       "Number of Subscribers": "12,000+",
       "Send Schedule": "Monthly",
       "Description": "Branded as the place to get tech news the mainstream media missed, Bizzaro Devs publishes a summary of three key stories in each issue, plus ten must-see links of the month and quirky tech-related statistics.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/bizarro-devs.md",
-      "updatedAt": "2025-01-04T19:20:19.230Z"
+      "updatedAt": "2025-01-04T19:56:53.293Z",
+      "screenshotPath": "images/newsletters/bizarro-devs.png"
     },
     "Stratechery": {
       "URL": "https://stratechery.com/category/articles/",
@@ -35,9 +37,10 @@
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Fluctuates",
       "Description": "With a strong academic background, and work experience that ranges from Apple to Microsoft, author Ben Thompson is considered one of the most respected observers in the tech space.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/stratechery.md",
-      "updatedAt": "2025-01-04T19:20:31.303Z"
+      "updatedAt": "2025-01-04T19:58:23.489Z",
+      "screenshotPath": "images/newsletters/stratechery.png"
     },
     "Box of Amazing": {
       "URL": "https://boxofamazing.com/",
@@ -45,9 +48,10 @@
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Weekly",
       "Description": "Promoted as condensing three hours of stories into three minutes, Box of Amazing covers a wide variety of tech topics.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/box-of-amazing.md",
-      "updatedAt": "2025-01-04T19:20:40.224Z"
+      "updatedAt": "2025-01-04T19:58:26.796Z",
+      "screenshotPath": "images/newsletters/box-of-amazing.png"
     },
     "The Download": {
       "URL": "https://www.technologyreview.com/topic/download-newsletter/",
@@ -55,9 +59,10 @@
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily",
       "Description": "Produced by the journalists/content-publishing arm of the Massachusetts Institute of Technology, The Download applies a high-level, humanity-focused lens towards their analysis of tech news.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/the-download.md",
-      "updatedAt": "2025-01-04T19:20:51.365Z"
+      "updatedAt": "2025-01-04T19:58:33.870Z",
+      "screenshotPath": "images/newsletters/the-download.png"
     },
     "Dense Discovery": {
       "URL": "https://www.densediscovery.com/",
@@ -65,142 +70,202 @@
       "Number of Subscribers": "36,000+",
       "Send Schedule": "Weekly",
       "Description": "A thoughtful newsletter designed to help you feel inspired, be productive, and think critically, looking at how technology intersects with culture, design, and sustainability.",
-      "status": "completed",
+      "status": "screenshot_generated",
       "markdownPath": "newsletters/dense-discovery.md",
-      "updatedAt": "2025-01-04T19:21:03.584Z"
+      "updatedAt": "2025-01-04T19:58:38.064Z",
+      "screenshotPath": "images/newsletters/dense-discovery.png"
     },
     "Tedium": {
       "URL": "https://tedium.co/",
       "Year Started": 2015,
       "Number of Subscribers": "12,000+",
       "Send Schedule": "Bi-Weekly",
-      "Description": "Instead of condensing news, Tedium goes in-depth on one over-the-top, abnormally interesting story per issue."
+      "Description": "Instead of condensing news, Tedium goes in-depth on one over-the-top, abnormally interesting story per issue.",
+      "status": "screenshot_generated",
+      "markdownPath": "newsletters/tedium.md",
+      "updatedAt": "2025-01-04T19:58:42.381Z",
+      "screenshotPath": "images/newsletters/tedium.png"
     },
     "Digital Trends": {
       "URL": "https://www.digitaltrends.com/newsletter/",
       "Year Started": 2006,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily & Semi-Daily",
-      "Description": "Famous for their in-depth, unbiased reviews of cool and cutting-edge tech products."
+      "Description": "Famous for their in-depth, unbiased reviews of cool and cutting-edge tech products.",
+      "status": "screenshot_generated",
+      "markdownPath": "newsletters/digital-trends.md",
+      "updatedAt": "2025-01-04T19:58:47.915Z",
+      "screenshotPath": "images/newsletters/digital-trends.png"
     },
     "Internet is Beautiful": {
       "URL": "https://www.internetisbeautiful.com/",
       "Year Started": 2016,
       "Number of Subscribers": "10,000+",
       "Send Schedule": "Weekly",
-      "Description": "Shares the best websites, tools, articles, videos each week, helping readers stay up-to-date on the latest web design and development trends."
+      "Description": "Shares the best websites, tools, articles, videos each week, helping readers stay up-to-date on the latest web design and development trends.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/internet-is-beautiful.png",
+      "updatedAt": "2025-01-04T19:58:52.016Z"
     },
     "Next Draft": {
       "URL": "https://nextdraft.com/subscribe/",
       "Year Started": 2010,
       "Number of Subscribers": "110,000",
       "Send Schedule": "Daily",
-      "Description": "A replacement for the algorithms used to aggregate news, authored by Dave Pel, and trusted by people who write the news."
+      "Description": "A replacement for the algorithms used to aggregate news, authored by Dave Pel, and trusted by people who write the news.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/next-draft.png",
+      "updatedAt": "2025-01-04T19:58:56.156Z"
     },
     "Tech Daily": {
       "URL": "https://www.bloomberg.com/account/newsletters/technology",
       "Year Started": "Unavailable",
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily",
-      "Description": "Produced as part of Bloomberg’s tech department, Tech Daily leans on Bloomberg’s deep talent pool to aggregate the day’s top stories."
+      "Description": "Produced as part of Bloomberg’s tech department, Tech Daily leans on Bloomberg’s deep talent pool to aggregate the day’s top stories.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/tech-daily.png",
+      "updatedAt": "2025-01-04T19:59:01.254Z"
     },
     "Exponential View": {
       "URL": "https://www.exponentialview.co/",
       "Year Started": 2015,
       "Number of Subscribers": "101,000+",
       "Send Schedule": "Weekly",
-      "Description": "Focuses almost exclusively on exponential technologies, curated by Azeem Azhard."
+      "Description": "Focuses almost exclusively on exponential technologies, curated by Azeem Azhard.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/exponential-view.png",
+      "updatedAt": "2025-01-04T19:59:06.377Z"
     },
     "Futurism": {
       "URL": "https://futurism.com/newsletter",
       "Year Started": 2018,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily",
-      "Description": "Covers fun, light-hearted approaches to how technology might shape our future."
+      "Description": "Covers fun, light-hearted approaches to how technology might shape our future.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/futurism.png",
+      "updatedAt": "2025-01-04T19:59:11.049Z"
     },
     "Import AI": {
       "URL": "https://importai.substack.com/",
       "Year Started": 2021,
       "Number of Subscribers": "55,000+",
       "Send Schedule": "Weekly",
-      "Description": "A serious deep dive into all things artificial intelligence, written by industry expert Jack Clark."
+      "Description": "A serious deep dive into all things artificial intelligence, written by industry expert Jack Clark.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/import-ai.png",
+      "updatedAt": "2025-01-04T19:59:14.675Z"
     },
     "Hacker Newsletter": {
       "URL": "https://hackernewsletter.com/",
       "Year Started": "Unavailable",
       "Number of Subscribers": "60,000+",
       "Send Schedule": "Weekly",
-      "Description": "A curated list of must-read links from Y Combinator’s Hacker News website."
+      "Description": "A curated list of must-read links from Y Combinator’s Hacker News website.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/hacker-newsletter.png",
+      "updatedAt": "2025-01-04T19:59:19.083Z"
     },
     "wpMail": {
       "URL": "http://wpmail.me/",
       "Year Started": 2011,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Weekly",
-      "Description": "Considered by many to be the best WordPress newsletter around."
+      "Description": "Considered by many to be the best WordPress newsletter around.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/wpmail.png",
+      "updatedAt": "2025-01-04T19:59:23.993Z"
     },
     "CIO": {
       "URL": "https://www.cio.com/newsletters/signup/",
       "Year Started": "Unavailable",
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily & Weekly",
-      "Description": "Publishes ten separate newsletters, all meant for Chief Information Officers and IT executives."
+      "Description": "Publishes ten separate newsletters, all meant for Chief Information Officers and IT executives.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/cio.png",
+      "updatedAt": "2025-01-04T19:59:29.840Z"
     },
     "SRE Weekly": {
       "URL": "https://sreweekly.com/",
       "Year Started": 2015,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Weekly",
-      "Description": "Covers the ins and outs of website outages and explores why websites and platforms go down."
+      "Description": "Covers the ins and outs of website outages and explores why websites and platforms go down.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/sre-weekly.png",
+      "updatedAt": "2025-01-04T19:59:33.529Z"
     },
     "The Information": {
       "URL": "https://www.theinformation.com/newsletters",
       "Year Started": 2013,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily and Weekly",
-      "Description": "Publishes in-depth tech stories not found elsewhere, with 11 newsletter choices covering topics in AI, the creator economy, and more."
+      "Description": "Publishes in-depth tech stories not found elsewhere, with 11 newsletter choices covering topics in AI, the creator economy, and more.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/the-information.png",
+      "updatedAt": "2025-01-04T19:59:37.399Z"
     },
     "Sidebar.io": {
       "URL": "https://sidebar.io/",
       "Year Started": 2012,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily",
-      "Description": "Delivers 5 design links to your inbox every day, covering graphic design, UI, and UX."
+      "Description": "Delivers 5 design links to your inbox every day, covering graphic design, UI, and UX.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/sidebario.png",
+      "updatedAt": "2025-01-04T19:59:41.547Z"
     },
     "Product Hunt": {
       "URL": "https://www.producthunt.com/newsletter",
       "Year Started": 2003,
       "Number of Subscribers": "Unavailable",
       "Send Schedule": "Daily & Weekly",
-      "Description": "Identifies the best, coolest, and most cutting-edge tech products on the market."
+      "Description": "Identifies the best, coolest, and most cutting-edge tech products on the market.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/product-hunt.png",
+      "updatedAt": "2025-01-04T19:59:46.639Z"
     },
     "CB Insights": {
       "URL": "https://www.cbinsights.com/newsletter/",
       "Year Started": 2017,
       "Number of Subscribers": "1,000,000+",
       "Send Schedule": "Semi-Daily",
-      "Description": "Blends the world of tech and investing, relying on data analysis and deep business connections."
+      "Description": "Blends the world of tech and investing, relying on data analysis and deep business connections.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/cb-insights.png",
+      "updatedAt": "2025-01-04T19:59:50.401Z"
     },
     "TLDR": {
       "URL": "https://tldr.tech/",
       "Year Started": 2018,
       "Number of Subscribers": "1,250,000+",
       "Send Schedule": "Daily",
-      "Description": "Delivers byte-sized news for busy techies, covering the most important stories in tech, science, and coding."
+      "Description": "Delivers byte-sized news for busy techies, covering the most important stories in tech, science, and coding.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/tldr.png",
+      "updatedAt": "2025-01-04T19:59:53.021Z"
     },
     "Benedict’s Newsletter": {
       "URL": "https://www.ben-evans.com/newsletter",
       "Year Started": 1999,
       "Number of Subscribers": "175,000+",
       "Send Schedule": "Weekly",
-      "Description": "Published by a veteran of Andreessen Horowitz, this newsletter is one of the most respected in the industry."
+      "Description": "Published by a veteran of Andreessen Horowitz, this newsletter is one of the most respected in the industry.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/benedicts-newsletter.png",
+      "updatedAt": "2025-01-04T19:59:58.456Z"
     },
     "Modern CTO Weekly": {
       "URL": "https://moderncto.io/newsletter/",
       "Year Started": 2017,
       "Number of Subscribers": "70,000+",
       "Send Schedule": "Weekly",
-      "Description": "Helps tech executives stay abreast of the most important developments in the space, with content derived from interviews with industry heavyweights."
+      "Description": "Helps tech executives stay abreast of the most important developments in the space, with content derived from interviews with industry heavyweights.",
+      "status": "screenshot_generated",
+      "screenshotPath": "images/newsletters/modern-cto-weekly.png",
+      "updatedAt": "2025-01-04T20:00:06.579Z"
     }
   }
 }

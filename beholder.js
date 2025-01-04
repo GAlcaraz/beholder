@@ -1,15 +1,19 @@
 import puppeteer from "puppeteer";
-import { URL } from "url";
+import path from "path";
+import { loadStorage, addToStorage } from "./puppet.js";
+import { toKebabCase } from "./utils.js";
 
-async function captureWebsite(url, browser) {
+async function captureNewsletterScreenshot(url, browser, newsletterName) {
   try {
-    const domain = new URL(url).hostname;
-    const outputPath = `${domain}.png`;
+    const filename = `${toKebabCase(newsletterName)}.png`;
+    const outputDir = path.join(process.cwd(), "images");
+
+    const outputPath = path.join(outputDir, filename);
 
     const page = await browser.newPage();
     await page.setViewport({ width: 1920, height: 1080 });
 
-    console.log(`Capturing screenshot of ${url}`);
+    console.log(`Capturing screenshot of ${url} for ${newsletterName}`);
     await page.goto(url, {
       waitUntil: "networkidle0",
       timeout: 30000,
@@ -18,44 +22,69 @@ async function captureWebsite(url, browser) {
     console.log(`Saving screenshot to ${outputPath}`);
     await page.screenshot({ path: outputPath });
     await page.close();
-    console.log(`Done with ${domain}`);
+
+    return {
+      success: true,
+      imagePath: `images/newsletters/${filename}`, // Relative path for storage
+    };
   } catch (error) {
-    console.error(`Error processing ${url}:`, error);
+    console.error(
+      `Error capturing screenshot for ${newsletterName} (${url}):`,
+      error,
+    );
+    return {
+      success: false,
+      error: error.message,
+    };
   }
 }
 
-async function processUrls(urls) {
+export async function generateNewsletterScreenshots() {
+  const storage = await loadStorage();
+  const newslettersToProcess = Object.entries(storage.newsletters).filter(
+    ([_, data]) =>
+      data.status !== "screenshot_generated" &&
+      data.URL &&
+      data.URL !== "Unavailable",
+  );
+
+  if (newslettersToProcess.length === 0) {
+    console.log("No newsletters need screenshots");
+    return;
+  }
+
   const browser = await puppeteer.launch({
     executablePath: "/usr/bin/chromium-browser",
     headless: "new",
   });
 
   try {
-    // Process all URLs concurrently
-    await Promise.all(
-      urls.map((url) => {
-        const formattedUrl = url.startsWith("http") ? url : `https://${url}`;
-        return captureWebsite(formattedUrl, browser);
-      }),
-    );
+    for (const [name, data] of newslettersToProcess) {
+      console.log(`Processing screenshot for ${name}`);
+      const url = data.URL.startsWith("http")
+        ? data.URL
+        : `https://${data.URL}`;
+
+      const result = await captureNewsletterScreenshot(url, browser, name);
+
+      if (result.success) {
+        // Update storage with screenshot status and path
+        storage.newsletters[name] = {
+          ...data,
+          status: "screenshot_generated",
+          screenshotPath: result.imagePath,
+          updatedAt: new Date().toISOString(),
+        };
+
+        await addToStorage(storage);
+        console.log(`Successfully generated screenshot for ${name}`);
+      }
+
+      // Add a small delay between screenshots to avoid rate limiting
+      await new Promise((r) => setTimeout(r, 1000));
+    }
   } finally {
     await browser.close();
-    console.log("All done!");
+    console.log("Screenshot generation complete!");
   }
 }
-
-// Get URLs from command line arguments (skip first two args which are node and script name)
-const urls = process.argv.slice(2);
-
-if (urls.length === 0) {
-  console.error("Please provide at least one URL as an argument");
-  console.error(
-    "Usage: node beholder.js https://example1.com https://example2.com",
-  );
-  process.exit(1);
-}
-
-processUrls(urls).catch((error) => {
-  console.error("Fatal error:", error);
-  process.exit(1);
-});

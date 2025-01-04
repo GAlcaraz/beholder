@@ -1,5 +1,7 @@
 import { processUrls } from "./puppet.js"; // assuming we saved the previous code as scraper.js
 import { processNewslettersWithAI } from "./processNewsletter.js";
+import { generateNewsletterScreenshots } from "./beholder.js";
+import { addSocialsToNewsletters } from "./puppet.js";
 
 // Get URLs from command line arguments
 const urls = process.argv.slice(2);
@@ -21,4 +23,11 @@ processUrls(urls)
     process.exit(1);
   });
 
-processNewslettersWithAI();
+addSocialsToNewsletters();
+
+// processNewslettersWithAI();
+
+// generateNewsletterScreenshots().catch((error) => {
+//   console.error("Fatal error:", error);
+//   process.exit(1);
+// });
