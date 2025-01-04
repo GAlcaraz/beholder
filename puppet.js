@@ -186,6 +186,7 @@ async function extractSocialLinks(url, browser) {
   try {
     await page.goto(url, { waitUntil: "networkidle0" });
 
+    console.log("Getting socials for ", url);
     const socialLinks = await page.evaluate(() => {
       const socialPatterns = /twitter|facebook|linkedin|instagram|youtube/i;
       const links = document.querySelectorAll("a[href]");
@@ -197,6 +198,7 @@ async function extractSocialLinks(url, browser) {
         .filter((href, index, self) => self.indexOf(href) === index); // Remove duplicates
     });
 
+    console.log(socialLinks);
     return socialLinks;
   } finally {
     await page.close();
@@ -219,22 +221,17 @@ async function addSocialsToNewsletters() {
     }
 
     try {
-      const socialData = extractSocialLinks(data.URL, browser);
+      const socialLinks = await extractSocialLinks(data.URL, browser);
 
-      await addToStorage({
-        urls: {
-          ...storage.urls,
-          [url]: {
-            ...urlData,
-            status: "added_socials",
-            socialData, // Add the array of social links
-          },
-        },
-        newsletters: {
-          ...storage.newsletters,
-          ...newsletters,
-        },
-      });
+      storage.newsletters[name] = {
+        ...data,
+        socialLinks,
+        status: "added_socials",
+      };
+
+      console.log(storage.newsletters[name]);
+
+      await addToStorage(storage);
     } catch (error) {
       console.error(`Error processing socials for ${name}:`, error);
     }
