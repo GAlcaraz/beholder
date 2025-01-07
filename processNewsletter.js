@@ -58,7 +58,7 @@ async function processNewsletterWithAI(content) {
 The provided content is:
 ${content}
 
-The already existing list of tags you can use to categorize is tech, business, finance, startup, freemium, paid, free, daily, weekly, politics, culture, science, news, career, ai, entrepreneurship, technology, personal-development, programming, marketing, lifestyle, design, productivity, general, book, education, investment, health-fitness, writing, product-development, entertainment, arts, media, podcast, social-network, philosophy, sport, data, no-code, psychology, remote-work, social-impact, travel, artificial-intelligence, history, web3, food, game, music, fashion, real-estate, ar-vr, sales, wordpress, photography
+The already existing list of tags you can use to categorize is tech, business, finance, startup, freemium, paid, free, daily, weekly, politics, culture, science, news, career, ai, entrepreneurship, personal-development, programming, marketing, lifestyle, design, productivity, general, book, education, investment, health-fitness, writing, product-development, entertainment, arts, media, podcast, social-network, philosophy, sport, data, no-code, psychology, remote-work, social-impact, travel, artificial-intelligence, history, web3, food, game, music, fashion, real-estate, ar-vr, sales, wordpress, photography
 If you dont have a certain piece of information (like twitter handle), don't write that field
 
 Format your response in markdown like this:
@@ -83,9 +83,8 @@ links:
     name: "link name"
     link: "URL"
 ---
-# Newsletter Name
 [Introduction paragraph]
-![newsletter title](images/[newsletter title in kebabcase.webp]) // this line is an image path for an image I generated before
+![newsletter title](images/[newsletter title in kebabcase.webp])
 ## Newsletter Features
 [Features content]
 ## Writing Style
@@ -113,7 +112,7 @@ async function processNewslettersWithAI() {
 
   for (const [name, data] of Object.entries(newslettersData)) {
     if (data.status === "completed" || data.status === "screenshot_generated") {
-      console.log(`Skipping ${name} - already processed`);
+      console.log(`Skipping ${name} - already processed newsletter with AI`);
       continue;
     }
 
@@ -130,7 +129,7 @@ async function processNewslettersWithAI() {
         // File doesn't exist, proceed with creation
       }
 
-      console.log(`Processing ${name}...`);
+      console.log(`Processing ${name} markdown...`);
       const markdown = await processNewsletterWithAI(
         JSON.stringify(data, null, 2),
       );

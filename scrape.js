@@ -14,7 +14,7 @@ if (urls.length === 0) {
 
 console.log("Processing URLs:", urls);
 
-processUrls(urls)
+await processUrls(urls)
   .then(() => {
     console.log("All URLs processed successfully!");
   })
@@ -23,11 +23,11 @@ processUrls(urls)
     process.exit(1);
   });
 
-addSocialsToNewsletters();
+await addSocialsToNewsletters();
 
-// processNewslettersWithAI();
+await processNewslettersWithAI();
 
-// generateNewsletterScreenshots().catch((error) => {
-//   console.error("Fatal error:", error);
-//   process.exit(1);
-// });
+await generateNewsletterScreenshots(true).catch((error) => {
+  console.error("Fatal error:", error);
+  process.exit(1);
+});

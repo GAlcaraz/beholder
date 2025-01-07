@@ -1,39 +1,39 @@
 ---
 layout: ../../layouts/Card.astro
 title: Box of Amazing
-description: "Promoted as condensing three hours of stories into three minutes, Box of Amazing covers a wide variety of tech topics."
+description: "Condensing three hours of stories into three minutes, covering a wide variety of tech topics."
 newsletterUrl: "https://boxofamazing.com/"
 social:
+  linkedin: "https://www.linkedin.com/in/rahimhirji/"
 language: "English"
 pricing: "Free"
 schedule: "Weekly"
-platform: "N/A" 
+platform: "Unknown"
 tags:
-  - Free
-  - Tech
-  - Weekly
+  - free
+  - tech
+  - weekly
 links:
   -
-    name: "Subscribe"
-    link: "https://boxofamazing.com/"
+    name: "LinkedIn Profile"
+    link: "https://www.linkedin.com/in/rahimhirji/"
 ---
-
 # Box of Amazing
-Box of Amazing is a unique newsletter that simplifies the overwhelming world of technology by condensing three hours worth of reading into just three minutes. It's designed for those who want to stay on top of the latest trends and innovations in the tech industry without having to spend hours doing so. 
+Box of Amazing is a weekly newsletter that prides itself on condensing three hours of reading stories into just three minutes. This newsletter touches on a wide array of topics within the tech industry, making it an invaluable resource for anyone looking to stay updated on the latest tech trends, discoveries, and insights without investing much time.
+
+![box-of-amazing](images/newsletters/box-of-amazing.png) 
 
 ## Newsletter Features
-- **Curated Content:** Handpicked stories covering the most significant tech developments and trends.
-- **Weekly Digest:** A concise yet comprehensive overview delivered straight to your inbox every week.
-- **Variety of Topics:** From AI to the latest tech gadgets, Box of Amazing spans a wide range of subjects within the tech sphere.
+Box of Amazing is designed to be an efficient read, summarizing extensive stories into bite-sized, digestible content. The newsletter covers a broad spectrum within the tech world, including but not limited to AI, programming, product development, and more. It's tailored for those who have a keen interest in technology but might not have hours to spare, providing a quick yet comprehensive overview of the most significant tech happenings.
 
 ## Writing Style
-Box of Amazing adopts a straightforward, easy-to-digest format. It cuts through the noise to provide readers with insightful summaries and key takeaways from each story.
+The writing style of Box of Amazing is succinct, engaging, and accessible. It aims to make complex tech topics understandable and interesting to a broad audience, including professionals and enthusiasts who may not have a technical background.
 
 ## Pricing
-Box of Amazing is completely free, offering valuable content weekly without any subscription fees.
+Box of Amazing is offered for free. There's no mention of a premium model, making it a cost-effective way for readers to stay informed.
 
 ## Authors and Background
-While specific details about the authors or editorial team of Box of Amazing are not provided, the newsletter's consistent ability to identify and summarize the most compelling stories in tech since its inception in 2015 speaks to their expertise and dedication.
+Information about the authors or the team behind Box of Amazing wasn't provided explicitly. However, the social link provided leads to Rahim Hirji's LinkedIn profile, suggesting he plays a significant role in the creation or curation of the newsletter content.
 
 ## Additional Resources
-For those interested in diving deeper into the tech world with minimal time investment, subscribing to Box of Amazing could be a great start. Visit their [subscription page](https://boxofamazing.com/) for more details.
+For readers seeking more in-depth understanding or direct interaction, the LinkedIn profile of Rahim Hirji could offer additional insights into the minds behind Box of Amazing and potentially more professional and personal developments within the tech sphere.

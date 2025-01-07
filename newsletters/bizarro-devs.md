@@ -1,41 +1,42 @@
 ---
 layout: ../../layouts/Card.astro
-title: Bizzaro Devs
-description: Branded as the place to get tech news the mainstream media missed, Bizzaro Devs publishes a summary of three key stories in each issue, plus ten must-see links of the month and quirky tech-related statistics.
+title: Bizarro Devs
+description: Branded as the place to get tech news the mainstream media missed, Bizzaro Devs specializes in delivering summaries of key tech stories, alongside must-see links and quirky tech-related statistics.
 newsletterUrl: "http://bizzarodevs.com/"
-social:
-  twitter: "N/A"
 language: "English"
 pricing: "Free"
 schedule: "Monthly"
-platform: "N/A"
+platform: "Unknown"
 tags:
-  - Free
-  - Tech
-  - Monthly
-  - News
+  - free
+  - tech
+  - monthly
+  - news
 links:
   -
-    name: "Bizzaro Devs Website"
+    name: "Archive"
     link: "http://bizzarodevs.com/"
 ---
-# Bizzaro Devs
-For those who are tired of the same old tech news, **Bizzaro Devs** offers a refreshing change. Launched in 2017, this newsletter takes pride in uncovering the tech stories and developments that have somehow eluded the mainstream media's radar. With over 12,000 subscribers, it's clear that there's a hungry audience eager for the unique content Bizzaro Devs delivers.
+# Bizarro Devs
+Bizarro Devs offers a unique compilation of tech news, quirks, and must-see links that mainstream media often overlooks. With over 12,000+ subscribers, this newsletter serves as a go-to monthly digest for cutting-edge, yet underrepresented tech stories and statistics. Launched in 2017, it has become recognized for shining a light on the oddities and innovations in the tech world that you might not find elsewhere.
 
+![bizarro-devs](images/newsletters/bizarro-devs.png)
 ## Newsletter Features
-Each issue of **Bizzaro Devs** is a carefully curated selection of tech wonders, comprising:
-- A summary of three key stories that are as informative as they are engaging.
-- Ten must-see links of the month, ensuring readers have direct access to the most intriguing content out there.
-- Quirky tech-related statistics that add a fun and enlightening twist to the usual tech discourse.
+Each issue of Bizarro Devs is carefully curated to include:
+- Three key tech news stories that are off the mainstream radar
+- Ten must-see tech links of the month
+- Intriguing and quirky technology-related statistics
+
+This blend of content ensures that subscribers are always in the loop on niche, interesting, and often bizarre tech developments. 
 
 ## Writing Style
-The writing style of **Bizzaro Devs** is approachable and entertaining, making even the most complex tech topics accessible to a broad audience. It's the perfect blend of insightful and whimsical, ensuring that readers not only stay informed but also enjoy the process of discovery.
+The writing style of Bizarro Devs leans towards the engaging and informal. It's tailored to tech enthusiasts who appreciate a bit of fun and quirkiness in their reads. The concise summaries enable quick consumption of tech news without sacrificing depth or interest.
 
 ## Pricing
-**Bizzaro Devs** is completely free, making it accessible to anyone with an interest in tech stories beyond the mainstream narrative. 
+Bizarro Devs is completely free to subscribe to, making it an accessible option for anyone interested in tech, regardless of their budget.
 
 ## Authors and Background
-While specific details about the authors or the team behind **Bizzaro Devs** are not provided, it's apparent from the quality and tone of the content that they are deeply ingrained in the tech world with a knack for storytelling.
+The specific authors and creators behind Bizarro Devs are not mentioned, but the newsletter’s consistent delivery and unique angle on tech news speaks to a team that is deeply immersed in the technology sector, with a knack for spotlighting the unusual and overlooked.
 
 ## Additional Resources
-For those looking to dive deeper into the world of offbeat tech news, **Bizzaro Devs** occasionally features links and resources that explore topics further. These are introduced in the newsletters as part of their ten must-see links of the month.
+While additional resources are not explicitly listed within the provided content, the monthly issues themselves serve as a rich resource for anyone wanting to explore tech news that strays from the beaten path. The archive of past issues can be an intriguing dive for curious minds.

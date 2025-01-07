@@ -1,23 +1,37 @@
 import puppeteer from "puppeteer";
 import path from "path";
+import fs from "fs"; // Add this import
 import { loadStorage, addToStorage } from "./puppet.js";
 import { toKebabCase } from "./utils.js";
 
-async function captureNewsletterScreenshot(url, browser, newsletterName) {
+async function captureNewsletterScreenshot(
+  url,
+  browser,
+  newsletterName,
+  force = false,
+) {
   try {
     const filename = `${toKebabCase(newsletterName)}.png`;
     const outputDir = path.join(process.cwd(), "images");
 
     const outputPath = path.join(outputDir, filename);
 
+    if (fs.existsSync(outputPath) && !force) {
+      console.log(
+        `Screenshot already exists for ${newsletterName}, skipping...`,
+      );
+      return 0;
+    }
+
     const page = await browser.newPage();
-    await page.setViewport({ width: 1920, height: 1080 });
+    await page.setViewport({ width: 1024, height: 768 });
 
     console.log(`Capturing screenshot of ${url} for ${newsletterName}`);
     await page.goto(url, {
       waitUntil: "networkidle0",
       timeout: 30000,
     });
+    await new Promise((r) => setTimeout(r, 5000));
 
     console.log(`Saving screenshot to ${outputPath}`);
     await page.screenshot({ path: outputPath });
@@ -39,14 +53,9 @@ async function captureNewsletterScreenshot(url, browser, newsletterName) {
   }
 }
 
-export async function generateNewsletterScreenshots() {
+export async function generateNewsletterScreenshots(force = false) {
   const storage = await loadStorage();
-  const newslettersToProcess = Object.entries(storage.newsletters).filter(
-    ([_, data]) =>
-      data.status !== "screenshot_generated" &&
-      data.URL &&
-      data.URL !== "Unavailable",
-  );
+  const newslettersToProcess = Object.entries(storage.newsletters);
 
   if (newslettersToProcess.length === 0) {
     console.log("No newsletters need screenshots");
@@ -55,7 +64,7 @@ export async function generateNewsletterScreenshots() {
 
   const browser = await puppeteer.launch({
     executablePath: "/usr/bin/chromium-browser",
-    headless: "new",
+    headless: false,
   });
 
   try {
@@ -65,7 +74,12 @@ export async function generateNewsletterScreenshots() {
         ? data.URL
         : `https://${data.URL}`;
 
-      const result = await captureNewsletterScreenshot(url, browser, name);
+      const result = await captureNewsletterScreenshot(
+        url,
+        browser,
+        name,
+        force,
+      );
 
       if (result.success) {
         // Update storage with screenshot status and path

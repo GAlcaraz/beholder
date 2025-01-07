@@ -1,40 +1,50 @@
 ---
 layout: ../../layouts/Card.astro
 title: Tedium
-description: In-depth exploration of one over-the-top, abnormally interesting story per issue.
+description: In-depth on one abnormally interesting story per issue.
 newsletterUrl: "https://tedium.co/"
 social:
-  twitter: "N/A"
+  twitter: "readtedium"
 language: "English"
 pricing: "Free"
 schedule: "Bi-Weekly"
-platform: "N/A"
+platform: "Website"
 tags:
   - free
   - culture
-  - news
-  - bi-weekly
+  - entertainment
+  - history
+  - media
+  - weekly
 links:
   -
-    name: "Tedium"
-    link: "https://tedium.co/"
+    name: "Jesse Welles Best YouTube Video 2024"
+    link: "https://tedium.co/2024/12/27/jesse-welles-best-youtube-video-2024/"
+  -
+    name: "Punk Rock MBA YouTube Quitting"
+    link: "https://tedium.co/2024/12/20/punk-rock-mba-youtube-quitting/"
+  -
+    name: "Tedium on YouTube"
+    link: "https://www.youtube.com/watch?v=hqi2Jy0UMiA"
 ---
 # Tedium
-Tedium focuses on the untold stories, diving deep into the underappreciated and often overlooked aspects of culture, history, and technology. Unlike typical news outlets that offer quick summaries of the world's happenings, Tedium chooses instead to provide comprehensive and engaging narratives about singular, captivating topics.
-
+Tedium dives deep into the corners of history, culture, and media that are often overlooked, presenting its readers with one in-depth, over-the-top story with each issue. Rather than providing a broad overview of current events, Tedium takes a single topic and explores it from all angles, uncovering the fascinating details that are usually missed in traditional news coverage. This bi-weekly newsletter is perfect for curious minds who love to delve into the quirks and oddities of our world.
+![tedium](images/newsletters/tedium.webp)
 ## Newsletter Features
-- **In-depth Analysis:** Each issue dedicates itself to unraveling the complexities of a single topic, ensuring readers receive a thorough understanding of the subject at hand.
-- **Unique Stories:** Content often highlights obscure or neglected stories that aren't found in mainstream media outlets, catering to curious minds looking for something different.
-- **Bi-Weekly Schedule:** A steady, manageable flow of content, perfect for readers who appreciate quality over quantity.
+Tedium features include:
+- In-depth exploration of unique, often overlooked topics.
+- Bi-weekly delivery right to your inbox.
+- Rich storytelling that uncovers the layers behind each subject.
+- Direct links to additional resources and related stories.
 
 ## Writing Style
-Tedium’s writing style can be described as detail-oriented, engaging, and approachable. It avoids the pitfall of dryness that some might expect from in-depth reports, maintaining a balance between informative and entertaining.
+The writing style of Tedium is detail-oriented and investigative, often adding a touch of humor and personality to make complex or obscure subjects accessible and engaging. The authors go beyond the surface to bring readers the stories behind the story, crafted with a keen eye for fascinating facts and compelling narratives.
 
 ## Pricing
-Tedium is a completely free-to-read newsletter, inviting a broad audience of readers eager to dive deep into fascinating stories without the barrier of a subscription fee.
+Tedium is entirely free, offering rich, detailed content without any subscription fee.
 
 ## Authors and Background
-Launched in 2015, Tedium is the brainchild of journalists and storytellers who sought to counter the trend of bite-sized journalism. With over 12,000 subscribers, it has found a dedicated reader base that appreciates its unique approach to storytelling.
+Tedium is the brainchild of Ernie Smith, a seasoned writer and journalist known for his ability to find the extraordinary in the seemingly mundane. With a passion for deep dives into uncharted territories of culture and history, Smith and his contributors bring a diverse range of subjects to life in every issue.
 
 ## Additional Resources
-While the primary content of Tedium is its newsletter, the website itself hosts an archive of all past issues, enriching the reader's experience by offering easy access to its vast repertoire of stories.
+For readers seeking more, Tedium's website hosts a treasure trove of articles and stories beyond the newsletter content. With links to videos, social media discussions, and related articles, Tedium creates a comprehensive experience for those who can't get enough of the odd and fascinating aspects of our world.

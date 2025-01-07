@@ -215,8 +215,12 @@ async function addSocialsToNewsletters() {
   const storage = await loadStorage();
   const newslettersData = storage.newsletters;
   for (const [name, data] of Object.entries(newslettersData)) {
-    if (data.status === "added_socials") {
-      console.log(`Skipping ${name} - already processed`);
+    if (
+      data.status === "added_socials" ||
+      data.status === "completed" ||
+      data.status === "screenshot_generated"
+    ) {
+      console.log(`Skipping ${name} - already processed socials`);
       continue;
     }
 
