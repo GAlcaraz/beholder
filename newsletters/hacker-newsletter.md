@@ -1,7 +1,9 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: Hacker Newsletter
-description: A curated list of must-read links from Y Combinator’s Hacker News website.
+description: A curated weekly newsletter featuring the best content from Hacker News.
+card_image: hacker-newsletter.png
 newsletterUrl: "https://hackernewsletter.com/"
 language: "English"
 pricing: "Free"
@@ -9,34 +11,26 @@ schedule: "Weekly"
 tags:
   - free
   - tech
-  - technology
   - programming
-  - entrepreneurship
-  - startup
-links:
-  -
-    name: "Archive"
-    link: "https://hackernewsletter.com/issues/"
+  - weekly
 ---
 
-# Hacker Newsletter
-Hacker Newsletter offers a meticulously curated list of the week's most engaging content from Y Combinator’s Hacker News website. It's the go-to digest for thousands of technologists, entrepreneurs, and programmers eager to stay on top of industry trends without having to sift through the noise of the original site. With over 60,000 subscribers, it has solidified its spot as a staple in the tech community.
+Hacker Newsletter is a weekly newsletter that curates the best and most interesting content from Hacker News, ensuring you never miss out on the top stories in tech and development.
 
-![hacker-newsletter](images/hacker-newsletter.webp) // this line is an image path for an image I generated before
+![hacker newsletter](images/hacker-newsletter.webp)
 
 ## Newsletter Features
-- **Curated Content**: Each issue is packed with links to insightful articles, thought-provoking discussions, and essential resources from around the web, all handpicked for quality and relevance.
-- **Diverse Topics**: While focusing primarily on technology and programming, the newsletter occasionally sprinkles in pieces on entrepreneurship, startup culture, and personal development, making it a well-rounded read for industry professionals.
-- **Weekly Schedule**: Delivered once a week, it strikes the perfect balance between keeping subscribers informed and respecting their inbox.
+Hacker Newsletter brings you a hand-picked selection of the latest and most significant articles, discussions, and insights from Hacker News. It's designed for tech enthusiasts who want a concise overview of what's happening in the tech world.
 
 ## Writing Style
-The writing in Hacker Newsletter is concise and to the point. Summaries of articles and discussion threads are provided to give readers a clear idea of what each link offers, enabling them to decide what they're most interested in exploring deeper.
+The newsletter is concise, focusing on providing only the most impactful information without overwhelming you with details. It is perfect for busy professionals looking to stay updated with the latest tech trends.
 
 ## Pricing
-Hacker Newsletter is completely free, making it accessible to anyone interested in the tech industry, from beginners to seasoned professionals.
+Hacker Newsletter is completely free, making it accessible to anyone interested in tech, programming, and development.
 
 ## Authors and Background
-The newsletter doesn't provide specific details on its authors or editorial team, but it's supported by the vibrant community at Y Combinator’s Hacker News. This backing ensures that the content is not only rich in variety but also significant in terms of its impact and relevance to the tech community.
+Since its launch in 2010, Hacker Newsletter has attracted over 60,000 subscribers, becoming a reliable source for top-quality tech content.
 
 ## Additional Resources
-The archive section is a treasure trove of past issues, allowing new subscribers to catch up on valuable content they might have missed and regular readers to revisit topics of interest.
+While no additional resources are listed, you can explore more tech content by visiting [Hacker News](https://news.ycombinator.com/).
+```

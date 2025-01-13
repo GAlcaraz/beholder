@@ -1,38 +1,39 @@
 ---
 layout: ../../layouts/Card.astro
-title: TLDR
-description: Delivers byte-sized news for busy techies, covering the most important stories in tech, science, and coding.
-newsletterUrl: "https://tldr.tech/"
+title: TLDR Newsletter
+description: A concise daily newsletter that covers the latest in the tech world, designed to keep you informed quickly and efficiently.
+card_image: tldr-newsletter.png
+newsletterUrl: "https://tldr.tech/newsletters"
 language: "English"
 pricing: "Free"
 schedule: "Daily"
 tags:
-  - tech
-  - science
-  - programming
   - free
+  - tech
   - daily
-  - news
+links: []
 ---
 
-# TLDR
-TLDR is a daily newsletter that primes its readership - over 1.25 million subscribers strong - with the most pivotal news stories in the realms of technology, science, and coding. Established in 2018, TLDR has become an indispensable resource for busy professionals and enthusiasts alike, who crave quick, consumable updates without sacrificing depth or quality.
+The TLDR Newsletter is your go-to source for a quick and comprehensive update on the latest happenings in the tech industry. Launched in 2018, it has rapidly grown to an impressive subscriber base of over 1.2 million readers. Designed to fit into your busy lifestyle, this daily newsletter brings you the most important tech news in a concise and easily digestible format.
 
-![TLDR](images/tldr.webp)
+![tldr newsletter](images/tldr-newsletter.webp)
 
 ## Newsletter Features
-- **Concise Summaries:** Each newsletter delivers the essence of crucial tech and science developments in a digestible format.
-- **Wide Coverage:** From groundbreaking scientific discoveries to the latest in coding practices, TLDR spans a broad spectrum of topics to keep its audience at the forefront of innovation.
-- **Daily Delivery:** Subscribers receive daily updates, ensuring they stay informed without the overwhelm of constant news streams.
+
+The TLDR Newsletter prides itself on providing its audience with lightning-fast news updates, allowing you to stay ahead in the fast-paced world of technology. Each edition is systematically organized to highlight must-know tech stories, new product launches, and significant industry shifts.
 
 ## Writing Style
-TLDR finds the perfect balance between brevity and depth, presenting complex topics in an easily understandable form without dumbing down. The writing is direct and accessible, targeting professionals and enthusiasts who value their time but still want to stay informed.
+
+With a focus on brevity and clarity, the newsletter's writing style is efficient yet engaging. It's tailored for tech enthusiasts and professionals who need to keep up with industry advancements without spending too much time on reading.
 
 ## Pricing
-TLDR is completely free, making it accessible to anyone interested in technology, science, and coding news. There's no premium option mentioned, indicating that all content is available without cost.
+
+The TLDR Newsletter is available for free, making it accessible to anyone interested in staying informed about the latest tech developments.
 
 ## Authors and Background
-While specific author information is not provided, TLDR's success, indicated by its over 1.25 million subscribers since its inception in 2018, speaks to the quality and reliability of its creators. The team behind TLDR focuses on distilling key information and trends from the tech world into digestible, engaging content for its vast audience.
+
+The team behind TLDR is a group of tech-savvy individuals with a passion for the industry and a background in various tech fields. They bring their expertise and unique insights to ensure that subscribers are well-informed and up-to-date.
 
 ## Additional Resources
-Although additional resources and social media links are not explicitly mentioned, TLDR's commitment to delivering valuable content daily is evident in its substantial subscriber base and the concise yet comprehensive nature of its newsletters. Subscribers likely have direct access to further reading and resources within each newsletter edition.
+
+For a deeper dive into the newsletter's content or to explore additional curated tech resources, visit [TLDR Newsletter's website](https://tldr.tech/newsletters).

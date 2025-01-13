@@ -1,38 +1,37 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: Internet is Beautiful
-description: Shares the best websites, tools, articles, videos each week, helping readers stay up-to-date on the latest web design and development trends.
-newsletterUrl: "https://www.internetisbeautiful.com/"
+description: A curated collection of fascinating links from across the internet, celebrating the beauty and diversity of the online world.
+card_image: internet-is-beautiful.png
+newsletterUrl: "https://internetisbeautiful.com/"
 social:
   twitter: "arianadeliii"
 language: "English"
 pricing: "Free"
 schedule: "Weekly"
-platform: "Custom"
 tags:
   - free
+  - general
   - weekly
-  - design
-  - technology
-  - web development
-links:
-  -
-    name: "Screenshot"
-    link: "images/newsletters/internet-is-beautiful.png"
 ---
-# Internet is Beautiful
-Internet is Beautiful curates a weekly digest of the most interesting and innovative sites, tools, articles, and videos. In a world where staying ahead of tech and design trends is crucial, this newsletter serves as your personal scout, bringing you the latest and greatest from the web's vast landscape.
 
-![internet-is-beautiful](images/internet-is-beautiful.webp)
+**Internet is Beautiful** is a newsletter dedicated to sharing intriguing and visually captivating links from the vast expanse of the internet. Catering to those who appreciate the diversity and creativity found online, this newsletter curates a selection of unique web pages every week.
+
+![internet is beautiful](images/internet-is-beautiful.webp)
+
 ## Newsletter Features
-- **Curated Content:** Handpicked websites, tools, articles, and videos that are at the forefront of design and technology.
-- **Weekly Digest:** A concise, once-a-week email ensuring you're kept up-to-date without overwhelming your inbox.
-- **Trend Insight:** Offers readers insight into web design and development trends, helping you stay ahead of the curve.
+Each issue of *Internet is Beautiful* includes an assortment of links that showcase the creativity, innovation, and beauty found on the web. From visually stunning websites to uniquely creative projects, the content is meant to inspire and fascinate subscribers.
+
 ## Writing Style
-The writing style of Internet is Beautiful focuses on clarity, engagement, and relevance. It aims to educate and inspire its readers by showcasing the best of web innovation in an accessible and entertaining format.
+The writing style of *Internet is Beautiful* is succinct and engaging, designed to provide just enough information to pique curiosity without overwhelming the reader.
+
 ## Pricing
-Internet is Beautiful is completely free, making it accessible to anyone interested in web design and development, as well as those curious about new web technologies and trends.
+The newsletter is free to subscribe to, making it accessible to a wide audience interested in discovering new and interesting content online.
+
 ## Authors and Background
-Though specific authors are not mentioned, the newsletter is likely managed by an individual or team passionate about technology, design, and the latest web trends. The provided Twitter link offers a way to connect with the creator(s), potentially offering insight into their expertise and interests.
+Started in 2016, *Internet is Beautiful* has grown a subscriber base of over 10,000 individuals who are keen on exploring the wonders of the internet. The curator, Ariana DeLine, shares links through her social presence as well.
+
 ## Additional Resources
-While detailed additional resources are not listed, followers can engage with the newsletter's curator(s) through their provided Twitter handle, enhancing the community aspect of this digital subscription.
+- [Twitter Profile](https://twitter.com/arianadeliii)
+```

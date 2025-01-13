@@ -1,48 +1,47 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: CIO Newsletter
-description: Publishes ten separate newsletters, all meant for Chief Information Officers and IT executives.
+description: Stay up-to-date with the latest in technology and business insights through CIO's daily and weekly newsletters.
+card_image: cio-newsletter.png
 newsletterUrl: "https://www.cio.com/newsletters/signup/"
 social:
-  linkedin: "https://bit.ly/LinkedinCIO"
-  twitter: "https://twitter.com/ciospain"
-  facebook: "https://www.facebook.com/CIOSpainES"
+  linkedin: "https://www.linkedin.com/company/cio-online"
+  twitter: "https://twitter.com/CIOonline"
+  facebook: "https://www.facebook.com/CIOfacebook"
+  youtube: "https://www.youtube.com/@CIOOnline"
 language: "English"
-pricing: "Unavailable"
-schedule: "Daily & Weekly"
-platform: "Unavailable"
+pricing: "Free"
+schedule: "Daily and Weekly"
+platform: "Website" 
 tags:
+  - free
   - tech
   - business
   - daily
   - weekly
 links:
   -
-    name: "Linkedin"
-    link: "https://bit.ly/LinkedinCIO"
-  -
-    name: "Twitter"
-    link: "https://twitter.com/ciospain"
-  -
-    name: "Facebook"
-    link: "https://www.facebook.com/CIOSpainES"
+    name: "CIO Newsletter Signup"
+    link: "https://www.cio.com/newsletters/signup/"
 ---
-# CIO Newsletter
-CIO.com offers a selection of newsletters tailored specifically for Chief Information Officers and IT executives. With ten different newsletters available, subscribers have the option to receive cutting-edge insight and analysis in the realm of information technology and business leadership.
 
-![cio-newsletter](images/cio-newsletter.webp)
+The CIO Newsletter provides a comprehensive dive into the latest developments in technology and business, essential for tech professionals and business leaders aiming to stay ahead of the curve. It offers a blend of the latest news, in-depth analysis, expert opinions, and practical advice, delivered right to your inbox.
+
+![cio newsletter](images/cio-newsletter.webp)
 
 ## Newsletter Features
-The newsletters cover a wide range of topics relevant to the C-suite in the IT industry, including technological trends, leadership strategies, and pivotal IT developments. Whether opting for the daily or weekly dispatch, subscribers gain access to a wealth of information designed to support informed decision-making in an ever-evolving digital landscape.
+CIO Newsletter covers a wide range of topics within the tech and business domains including IT strategy, innovation, leadership, and digital transformation. It keeps you informed about emerging technologies, industry trends, and leadership practices.
 
 ## Writing Style
-Content within these newsletters is professional and informative, catering to the informational needs and time constraints of executives. The writing is clear, concise, and directly aimed at providing value to individuals at the helm of IT departments.
+The newsletter showcases a professional and informative writing style, engaging industry experts to provide insights and detailed perspectives on current tech trends and business strategies.
 
 ## Pricing
-Details regarding the subscription fees for the CIO newsletters are not readily available. Interested parties should visit the newsletter signup page for the most current pricing information.
+The newsletter is freely available to subscribers, ensuring unobstructed access to valuable tech and business content conducive to informed decision-making.
 
 ## Authors and Background
-The editorial team behind the CIO newsletters boasts an in-depth understanding of the tech industry, ensuring that all content is not only timely but also of significant relevance to its target audience. This expertise enables the curation of newsletters that resonate with IT professionals and C-level executives alike.
+The content is curated and written by a team of experienced technology journalists and industry experts affiliated with CIO, an established platform renowned for providing credible tech and business insights.
 
 ## Additional Resources
-For those interested in connecting with the CIO community or staying updated with the latest IT leadership trends, CIO also provides links to their social media profiles on Linkedin, Twitter, and Facebook. These platforms offer additional vistas for engagement and insight into the world of IT management.
+Check out CIO's extensive repository of articles, insights, and video content on their [YouTube channel](https://www.youtube.com/@CIOOnline) to further delve into technology trends and strategies.
+```

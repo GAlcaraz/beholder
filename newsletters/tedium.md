@@ -1,21 +1,21 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: Tedium
-description: In-depth on one abnormally interesting story per issue.
+description: A bi-weekly newsletter exploring the fascinating and often overlooked details in history, technology, and culture.
+card_image: tedium.png
 newsletterUrl: "https://tedium.co/"
 social:
   twitter: "readtedium"
 language: "English"
 pricing: "Free"
-schedule: "Bi-Weekly"
-platform: "Website"
+schedule: "Bi-weekly"
 tags:
   - free
-  - culture
-  - entertainment
   - history
-  - media
-  - weekly
+  - culture
+  - tech
+  - bi-weekly
 links:
   -
     name: "Jesse Welles Best YouTube Video 2024"
@@ -24,27 +24,31 @@ links:
     name: "Punk Rock MBA YouTube Quitting"
     link: "https://tedium.co/2024/12/20/punk-rock-mba-youtube-quitting/"
   -
-    name: "Tedium on YouTube"
+    name: "YouTube Video"
     link: "https://www.youtube.com/watch?v=hqi2Jy0UMiA"
 ---
-# Tedium
-Tedium dives deep into the corners of history, culture, and media that are often overlooked, presenting its readers with one in-depth, over-the-top story with each issue. Rather than providing a broad overview of current events, Tedium takes a single topic and explores it from all angles, uncovering the fascinating details that are usually missed in traditional news coverage. This bi-weekly newsletter is perfect for curious minds who love to delve into the quirks and oddities of our world.
-![tedium](images/newsletters/tedium.webp)
+
+Tedium is a compelling bi-weekly newsletter established in 2015, which delves into the peculiar and oft-overlooked facets of history, technology, and culture. With over 10,000 subscribers, it's a treasure trove for the trivially curious reader.
+
+![tedium](images/tedium.webp)
+
 ## Newsletter Features
-Tedium features include:
-- In-depth exploration of unique, often overlooked topics.
-- Bi-weekly delivery right to your inbox.
-- Rich storytelling that uncovers the layers behind each subject.
-- Direct links to additional resources and related stories.
+
+Tedium specializes in uncovering the stories that you've likely never heard of, focusing on the minutiae and the esoteric across various domains. It is where the mundane becomes fascinating, delivering content that goes beyond surface-level understanding.
 
 ## Writing Style
-The writing style of Tedium is detail-oriented and investigative, often adding a touch of humor and personality to make complex or obscure subjects accessible and engaging. The authors go beyond the surface to bring readers the stories behind the story, crafted with a keen eye for fascinating facts and compelling narratives.
+
+The writing style is engaging and meticulously researched, ensuring that each issue is both informative and entertaining. The newsletter captivates its audience through storytelling that marries meticulous detail with a casual tone.
 
 ## Pricing
-Tedium is entirely free, offering rich, detailed content without any subscription fee.
+
+Tedium is completely free of charge, making it accessible to anyone interested in expanding their horizons with fascinating content every other week.
 
 ## Authors and Background
-Tedium is the brainchild of Ernie Smith, a seasoned writer and journalist known for his ability to find the extraordinary in the seemingly mundane. With a passion for deep dives into uncharted territories of culture and history, Smith and his contributors bring a diverse range of subjects to life in every issue.
+
+Founded in 2015, Tedium has built a significant following thanks to its unique approach to content that digs deep into surprising stories across history and technology, making it a go-to choice for trivia enthusiasts.
 
 ## Additional Resources
-For readers seeking more, Tedium's website hosts a treasure trove of articles and stories beyond the newsletter content. With links to videos, social media discussions, and related articles, Tedium creates a comprehensive experience for those who can't get enough of the odd and fascinating aspects of our world.
+
+Explore more fascinating stories and dive deeper into peculiar topics through the additional links provided in each newsletter. The linked articles and videos complement the written content, offering a dynamic reading experience.
+```

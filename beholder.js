@@ -4,6 +4,88 @@ import fs from "fs"; // Add this import
 import { loadStorage, addToStorage } from "./puppet.js";
 import { toKebabCase } from "./utils.js";
 
+async function removeGDPRBanners(page) {
+  await page.evaluate(() => {
+    const selectors = [
+      '[id*="accept"]',
+      '[class*="accept"]',
+      '[id*="consent"]',
+      'button[id*="cookie"]',
+      'button[class*="essential"]',
+      'button[class*="accept"]',
+      ".cookie-banner button",
+      "#cookie-consent button",
+    ];
+
+    selectors.forEach((selector) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => el.click());
+    });
+
+    // Also try to remove common cookie banner elements
+    const bannerSelectors = [
+      '[class*="cookie"]',
+      '[class*="consent"]',
+      '[id*="gdpr"]',
+      '[class*="banner"]',
+      ".cookie-notice",
+    ];
+
+    bannerSelectors.forEach((selector) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => el.remove());
+    });
+  });
+  await page.evaluate(() => {
+    const selectors = [
+      '[id*="accept"]',
+      '[class*="accept"]',
+      '[id*="consent"]',
+      'button[id*="cookie"]',
+      ".cookie-banner button",
+      "#cookie-consent button",
+    ];
+
+    selectors.forEach((selector) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => el.click());
+    });
+
+    document.querySelectorAll("button").forEach((btn) => {
+      if (btn.textContent.toLowerCase().includes("accept")) {
+        btn.click();
+      }
+    });
+
+    const bannerSelectors = [
+      '[class*="cookie"]',
+      '[class*="consent"]',
+      '[id*="gdpr"]',
+      '[class*="banner"]',
+      ".cookie-notice",
+    ];
+
+    bannerSelectors.forEach((selector) => {
+      const elements = document.querySelectorAll(selector);
+      elements.forEach((el) => el.remove());
+    });
+  });
+  await page.setRequestInterception(true);
+  page.on("request", (request) => {
+    if (request.url().includes("cookie") || request.url().includes("consent")) {
+      request.abort();
+    } else {
+      request.continue();
+    }
+  });
+  await page.evaluate(() => {
+    const elements = document.querySelectorAll(
+      '[class*="cookie"], [class*="consent"], [id*="gdpr"]',
+    );
+    elements.forEach((el) => el.remove());
+  });
+}
+
 async function captureNewsletterScreenshot(
   url,
   browser,
@@ -31,7 +113,13 @@ async function captureNewsletterScreenshot(
       waitUntil: "networkidle0",
       timeout: 30000,
     });
-    await new Promise((r) => setTimeout(r, 5000));
+    await page.evaluate(() => {
+      document.body.style.overflow = "hidden";
+      // Or for a specific element:
+      // document.querySelector('.your-element').style.overflow = 'hidden';
+    });
+    await new Promise((r) => setTimeout(r, 3000));
+    await removeGDPRBanners(page);
 
     console.log(`Saving screenshot to ${outputPath}`);
     await page.screenshot({ path: outputPath });

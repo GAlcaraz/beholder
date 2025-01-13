@@ -1,45 +1,44 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: Dense Discovery
-description: "A thoughtful newsletter designed to help you feel inspired, be productive, and think critically, looking at how technology intersects with culture, design, and sustainability."
+description: A weekly newsletter exploring intersections of design, technology, and culture.
+card_image: dense-discovery.png
 newsletterUrl: "https://www.densediscovery.com/"
 social:
-  instagram: "https://www.instagram.com/densediscovery/"
+  instagram: "densediscovery"
 language: "English"
 pricing: "Free"
 schedule: "Weekly"
-platform: "Unknown"
+platform: "Other" 
 tags:
   - free
-  - weekly
-  - technology
-  - culture
   - design
-  - productivity
-  - personal-development
+  - tech
+  - culture
+  - weekly
 links:
   -
     name: "Instagram"
     link: "https://www.instagram.com/densediscovery/"
 ---
-# Dense Discovery
-Dense Discovery is a weekly newsletter that brings a thoughtful approach to exploring how technology impacts culture, design, and sustainability. Launched in 2018, the newsletter has quickly grown to amass over 36,000 subscribers who seek inspiration, productivity tips, and critical thinking insights weekly. By weaving together elements from various disciplines, Dense Discovery offers a unique perspective aimed at sparking curiosity and encouraging a more thoughtful interaction with the world around us.
 
-![dense-discovery](images/newsletters/dense-discovery.webp)
+Dense Discovery is a thoughtfully curated newsletter that delves into the intersections between design, technology, and culture. It serves as a resource for creative professionals seeking inspiration and insight on how various fields interconnect and influence one another. With over 37,000 subscribers, it has become a popular read for those interested in thoughtful design and forward-thinking technology.
+
+![dense discovery](images/dense-discovery.webp)
+
 ## Newsletter Features
-- **Weekly Inspiration:** Handpicked content that inspires creativity and reflection.
-- **Productivity Tips:** Practical advice on being more productive in your personal and professional life.
-- **Critical Thinking:** Engaging discussions on the intersection of technology with wider cultural and sustainability issues.
-- **Culture & Design:** A focus on how technological advancements are reshaping our cultural landscapes and design practices.
+Dense Discovery offers a curated list of articles, tools, and insights that span across a wide spectrum of design and technology topics, with a pinch of cultural commentary. Each edition is crafted to inspire its readers through carefully selected content and unique perspectives.
 
 ## Writing Style
-Dense Discovery adopts a reflective and insightful writing style, aiming to provoke thought and inspire action among its readers. The content is crafted to be accessible yet intellectually stimulating, balancing depth with readability.
+The newsletter boasts a clear and concise writing style that is both engaging and informative. It aims to present complex ideas in an accessible manner, appealing to a broad audience ranging from professional designers to tech enthusiasts.
 
 ## Pricing
-Dense Discovery is offered completely free, making its rich insights and curated content accessible to anyone interested in the intersections of technology, culture, and design.
+Dense Discovery is available for free, making it accessible to anyone interested in its content without any financial barriers. However, it may offer paid features or subscriptions for additional benefits, which should be checked on their official site.
 
 ## Authors and Background
-While specific details about the authors or team behind Dense Discovery are not provided, the newsletter's consistent quality and perspective suggest a dedicate grouped of savvy individuals who are deeply passionate about technology's role in our lives and society.
+Since its inception in 2018, Dense Discovery has been dedicated to providing high-quality content curated by experts in design and technology fields. The background of the authors is diverse and rooted in various creative and technical disciplines, ensuring a wide range of perspectives.
 
 ## Additional Resources
-In addition to the weekly newsletter, Dense Discovery connects with its audience through Instagram, offering visual insights and updates on upcoming editions or themes.
+For more updates and insights, you can follow Dense Discovery on their [Instagram page](https://www.instagram.com/densediscovery/), where they share additional content and engage with their community.
+```

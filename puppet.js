@@ -153,7 +153,11 @@ async function processUrl(url) {
       },
       newsletters: {
         ...storage.newsletters,
-        ...newsletters,
+        ...Object.fromEntries(
+          Object.entries(newsletters).filter(
+            ([name]) => !storage.newsletters[name],
+          ),
+        ),
       },
     });
 
@@ -167,7 +171,6 @@ async function processUrl(url) {
     await writeFile(STORAGE_PATH, JSON.stringify(storage, null, 2));
 
     console.error(`Error processing ${url}:`, error);
-    throw error;
   }
 }
 
@@ -212,33 +215,40 @@ async function addSocialsToNewsletters() {
     headless: "new",
   });
 
-  const storage = await loadStorage();
-  const newslettersData = storage.newsletters;
-  for (const [name, data] of Object.entries(newslettersData)) {
-    if (
-      data.status === "added_socials" ||
-      data.status === "completed" ||
-      data.status === "screenshot_generated"
-    ) {
-      console.log(`Skipping ${name} - already processed socials`);
-      continue;
+  try {
+    const storage = await loadStorage();
+    const newslettersData = storage.newsletters;
+
+    for (const [name, data] of Object.entries(newslettersData)) {
+      if (
+        data.status === "added_socials" ||
+        data.status === "completed" ||
+        data.status === "screenshot_generated"
+      ) {
+        console.log(`Skipping ${name} - already processed socials`);
+        continue;
+      }
+
+      if (!data.URL || !data.URL.startsWith("http")) {
+        console.log(`Skipping ${name} - invalid URL: ${data.URL}`);
+        continue;
+      }
+
+      try {
+        const socialLinks = await extractSocialLinks(data.URL, browser);
+        storage.newsletters[name] = {
+          ...data,
+          socialLinks,
+          status: "added_socials",
+        };
+        console.log(storage.newsletters[name]);
+        await addToStorage(storage);
+      } catch (error) {
+        console.error(`Error processing socials for ${name}:`, error);
+      }
     }
-
-    try {
-      const socialLinks = await extractSocialLinks(data.URL, browser);
-
-      storage.newsletters[name] = {
-        ...data,
-        socialLinks,
-        status: "added_socials",
-      };
-
-      console.log(storage.newsletters[name]);
-
-      await addToStorage(storage);
-    } catch (error) {
-      console.error(`Error processing socials for ${name}:`, error);
-    }
+  } finally {
+    await browser.close();
   }
 }
 

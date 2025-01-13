@@ -1,42 +1,46 @@
+```markdown
 ---
 layout: ../../layouts/Card.astro
 title: Bizarro Devs
-description: Branded as the place to get tech news the mainstream media missed, Bizzaro Devs specializes in delivering summaries of key tech stories, alongside must-see links and quirky tech-related statistics.
-newsletterUrl: "http://bizzarodevs.com/"
+description: Monthly newsletter exploring unique development topics and quirks in the tech world.
+card_image: bizarro-devs.png
+newsletterUrl: "https://bizarrodevs.wpshout.com/"
 language: "English"
 pricing: "Free"
 schedule: "Monthly"
-platform: "Unknown"
 tags:
   - free
   - tech
+  - programming
   - monthly
-  - news
-links:
-  -
-    name: "Archive"
-    link: "http://bizzarodevs.com/"
 ---
-# Bizarro Devs
-Bizarro Devs offers a unique compilation of tech news, quirks, and must-see links that mainstream media often overlooks. With over 12,000+ subscribers, this newsletter serves as a go-to monthly digest for cutting-edge, yet underrepresented tech stories and statistics. Launched in 2017, it has become recognized for shining a light on the oddities and innovations in the tech world that you might not find elsewhere.
 
-![bizarro-devs](images/newsletters/bizarro-devs.png)
+[Introduction paragraph]
+Bizarro Devs is a newsletter that delves into the quirky and less conventional aspects of software development. Curated to fascinate and entertain developers, it offers a unique perspective on tech topics often overlooked in mainstream discussions.
+
+![bizarro devs](images/bizarro-devs.webp)
+
 ## Newsletter Features
-Each issue of Bizarro Devs is carefully curated to include:
-- Three key tech news stories that are off the mainstream radar
-- Ten must-see tech links of the month
-- Intriguing and quirky technology-related statistics
-
-This blend of content ensures that subscribers are always in the loop on niche, interesting, and often bizarre tech developments. 
+Bizarro Devs highlights unusual coding practices, odd software quirks, and intriguing problems faced by developers. It provides thought-provoking content that blends humor with technical insight, perfect for tech enthusiasts looking for a refreshing take on programming.
 
 ## Writing Style
-The writing style of Bizarro Devs leans towards the engaging and informal. It's tailored to tech enthusiasts who appreciate a bit of fun and quirkiness in their reads. The concise summaries enable quick consumption of tech news without sacrificing depth or interest.
+The newsletter is characterized by an engaging and conversational tone, making complex topics accessible and enjoyable. Each issue is crafted to keep readers hooked while providing valuable insights into the development world.
 
 ## Pricing
-Bizarro Devs is completely free to subscribe to, making it an accessible option for anyone interested in tech, regardless of their budget.
+Bizarro Devs is available free of charge, making it accessible to anyone interested in expanding their knowledge of unconventional development topics.
 
 ## Authors and Background
-The specific authors and creators behind Bizarro Devs are not mentioned, but the newsletter’s consistent delivery and unique angle on tech news speaks to a team that is deeply immersed in the technology sector, with a knack for spotlighting the unusual and overlooked.
+The newsletter was launched in 2017 and has successfully garnered a community of over 10,000 subscribers. The creators are passionate about uncovering the lesser-known facets of tech culture, aiming to spark curiosity and innovation among developers.
 
 ## Additional Resources
-While additional resources are not explicitly listed within the provided content, the monthly issues themselves serve as a rich resource for anyone wanting to explore tech news that strays from the beaten path. The archive of past issues can be an intriguing dive for curious minds.
+While there are currently no additional social links or resources listed, readers can stay updated by visiting the Bizarro Devs website regularly.
+```
+
+### Analysis and Assumptions:
+
+1. **Content Categories/Topics:** Based on the name "Bizarro Devs" and URL, it appears related to unconventional or less mainstream tech and development topics.
+2. **Pricing Details:** Assumed "Free" due to no purchase or membership details.
+3. **Frequency of Publication:** "Monthly" is clearly stated as the send schedule.
+4. **Missing Information:** No social media links provided. No description or platform indicated in the data.
+5. **Additional Links/Resources:** None provided, assumed not applicable except for the website URL.
+6. **Target Audience Specifics:** Likely tech enthusiasts or developers interested in unique programming insights.

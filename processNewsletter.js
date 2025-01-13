@@ -38,7 +38,7 @@ For example:
 `;
   const completion = await openai.chat.completions.create({
     messages: [{ role: "user", content: prompt }],
-    model: "gpt-4-0125-preview",
+    model: "gpt-4o-mini",
     response_format: { type: "json_object" }, // This ensures valid JSON output
     temperature: 0,
   });
@@ -66,6 +66,7 @@ Format your response in markdown like this:
 layout: ../../layouts/Card.astro
 title: Newsletter Name
 description: Brief description
+card_image: [newsletter title in kebabcase].png
 newsletterUrl: "https://example.com/newsletter"
 social:
   twitter: "twitterhandle"
@@ -99,7 +100,7 @@ links:
 
   const completion = await openai.chat.completions.create({
     messages: [{ role: "user", content: prompt }],
-    model: "gpt-4-0125-preview",
+    model: "gpt-4o",
   });
 
   return completion.choices[0].message.content;
